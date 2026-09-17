@@ -6,7 +6,7 @@
 <title>Colecciones Biológicas · Zoología Agrícola UNNE</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
     --verde-gabinete: #232f27;
@@ -43,8 +43,6 @@
 
   a{ color: inherit; }
 
-  /* ---------- Encabezado ---------- */
-
   header{
     display: flex;
     align-items: center;
@@ -60,10 +58,10 @@
   }
 
   .marca .institucion{
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 600;
-    font-size: 1.35rem;
-    letter-spacing: 0.01em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 1.55rem;
+    letter-spacing: 0.03em;
   }
 
   .marca .depto{
@@ -73,6 +71,8 @@
     opacity: 0.75;
     border-left: 1px solid var(--linea);
     padding-left: 0.6rem;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 500;
   }
 
   nav{
@@ -85,14 +85,12 @@
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.09em;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--papel-2);
     position: relative;
   }
 
   nav a:hover{ color: var(--papel); }
-
-  /* ---------- Vitrina / hero ---------- */
 
   .vitrina{
     position: relative;
@@ -116,10 +114,13 @@
     z-index: 1;
     margin: clamp(1rem, 3vw, 2.4rem);
     max-width: 30rem;
-    background: var(--papel);
-    color: var(--tinta);
+    background: rgba(24, 32, 27, 0.68);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: var(--papel);
+    border-left: 4px solid var(--terracota);
     padding: 1.6rem 1.8rem 1.5rem;
-    box-shadow: 0 1.2rem 2.4rem rgba(10, 14, 11, 0.35);
+    box-shadow: 0 1.2rem 2.4rem rgba(10, 14, 11, 0.45);
   }
 
   .etiqueta .pin{
@@ -129,26 +130,27 @@
     background: var(--terracota);
     display: inline-block;
     margin-bottom: 0.9rem;
-    box-shadow: 0 0 0 3px rgba(184, 67, 46, 0.18);
+    box-shadow: 0 0 0 3px rgba(184, 67, 46, 0.25);
   }
 
   .etiqueta h1{
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 500;
-    font-size: clamp(2rem, 4.4vw, 3rem);
-    line-height: 1.14;
-    letter-spacing: 0.005em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: clamp(2.1rem, 4.8vw, 3.2rem);
+    line-height: 1.1;
+    letter-spacing: 0.015em;
     margin: 0 0 0.8rem;
+    color: var(--papel);
   }
 
   .etiqueta p{
     margin: 0;
     font-size: 0.98rem;
     line-height: 1.55;
-    color: #4a4130;
+    color: var(--papel-2);
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
   }
-
-  /* ---------- Franja de presentación ---------- */
 
   .presentacion{
     padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1.25rem, 4vw, 3rem);
@@ -159,10 +161,12 @@
   }
 
   .presentacion .titulo-columna{
-    font-family: "Fraunces", serif;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 1.5rem;
+    font-family: "Public Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
     color: var(--ocre);
     margin: 0;
   }
@@ -172,13 +176,13 @@
     line-height: 1.75;
     color: var(--papel-2);
     max-width: 44ch;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
   }
 
   .presentacion .texto p + p{
     margin-top: 1.1rem;
   }
-
-  /* ---------- Pie ---------- */
 
   footer{
     padding: 1.5rem clamp(1.25rem, 4vw, 3rem) 2rem;
